@@ -72,11 +72,11 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_graphs: phony || CMakeFiles/graphs.dir
 
-build CMakeFiles/graphs.dir/lib/library.cpp.o: CXX_COMPILER__graphs_Debug /home/genken/code/it/graphs/lib/library.cpp || cmake_object_order_depends_target_graphs
-  DEP_FILE = CMakeFiles/graphs.dir/lib/library.cpp.o.d
+build CMakeFiles/graphs.dir/lib/complex_structures/AdjacencyList.cpp.o: CXX_COMPILER__graphs_Debug /home/genken/code/it/graphs/lib/complex_structures/AdjacencyList.cpp || cmake_object_order_depends_target_graphs
+  DEP_FILE = CMakeFiles/graphs.dir/lib/complex_structures/AdjacencyList.cpp.o.d
   FLAGS = -g -std=gnu++23
   OBJECT_DIR = CMakeFiles/graphs.dir
-  OBJECT_FILE_DIR = CMakeFiles/graphs.dir/lib
+  OBJECT_FILE_DIR = CMakeFiles/graphs.dir/lib/complex_structures
 
 
 # =============================================================================
@@ -86,7 +86,7 @@ build CMakeFiles/graphs.dir/lib/library.cpp.o: CXX_COMPILER__graphs_Debug /home/
 #############################################
 # Link the static library libgraphs.a
 
-build libgraphs.a: CXX_STATIC_LIBRARY_LINKER__graphs_Debug CMakeFiles/graphs.dir/lib/library.cpp.o
+build libgraphs.a: CXX_STATIC_LIBRARY_LINKER__graphs_Debug CMakeFiles/graphs.dir/lib/complex_structures/AdjacencyList.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/graphs.dir
   POST_BUILD = :

@@ -1,7 +1,3 @@
-//
-// Created by genken on 1/15/22.
-//
-
 #ifndef GRAPHS_TYPES_H
 #define GRAPHS_TYPES_H
 

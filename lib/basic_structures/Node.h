@@ -1,16 +1,10 @@
-//
-// Created by genken on 1/15/22.
-//
-
 #ifndef GRAPHS_NODE_H
 #define GRAPHS_NODE_H
 
-#include "../types.h"
-struct Node {
-    NODE_ID id;
 
-    operator int();
-};
+#include "../types.h"
+
+typedef NODE_ID Node;
 
 
 #endif //GRAPHS_NODE_H

@@ -207,6 +207,15 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+graph_BINARY_DIR:STATIC=/home/genken/code/it/graphs/cmake-build-debug
+
+//Value Computed by CMake
+graph_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+graph_SOURCE_DIR:STATIC=/home/genken/code/it/graphs
+
+//Value Computed by CMake
 graphs_BINARY_DIR:STATIC=/home/genken/code/it/graphs/cmake-build-debug
 
 //Value Computed by CMake

@@ -1,19 +1,18 @@
-//
-// Created by genken on 1/15/22.
-//
-
 #ifndef GRAPHS_GRAPHHANDLER_H
 #define GRAPHS_GRAPHHANDLER_H
 
 
-#include "../basic_structures/NodeList.h"
+#include <vector>
+#include "../basic_structures/Node.h"
+#include "../basic_structures/Edge.h"
 
-template<class GraphContainer>
+template<class GraphContainer, class NodeType>
 class GraphHandler {
 protected:
     GraphContainer container;
-    virtual NodeList* getChildren(Node);
-    virtual void addNode(Node);
+    virtual std::vector<NodeType*> getChildren(NodeType);
+    virtual void addNode(NodeType);
+    virtual void addEdge(Edge<NodeType>);
 };
 
 

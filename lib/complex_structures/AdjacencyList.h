@@ -1,21 +1,16 @@
-//
-// Created by genken on 1/15/22.
-//
-
 #ifndef GRAPHS_ADJACENCYLIST_H
 #define GRAPHS_ADJACENCYLIST_H
 
 
 #include <map>
-#include "../basic_structures/NodeList.h"
 #include "../classes/GraphHandler.h"
 
-class AdjacencyList : public GraphHandler<std::map<Node, NodeList>> {
+class AdjacencyList : public GraphHandler<std::map<ComplexNode, NodeList>> {
 public:
-    NodeList* getChildren(Node node);
+    NodeList* getChildren(ComplexNode node) final;
 
-    void addNode(Node node);
-    void addEdge(Node parent, Node child);
+    void addNode(ComplexNode node) final;
+    void addEdge(ComplexNode parent, ComplexNode child) final;
 };
 
 

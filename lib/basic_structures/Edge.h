@@ -1,16 +1,14 @@
-//
-// Created by genken on 1/15/22.
-//
-
 #ifndef GRAPHS_EDGE_H
 #define GRAPHS_EDGE_H
 
 
-#include "./Node.h"
+#include "./ComplexNode.h"
 #include "../types.h"
+
+template <typename NodeType>
 struct Edge {
-    Node *parent;
-    Node *child;
+    NodeType *parent;
+    NodeType *child;
     EDGE_WEIGHT weight;
 };
 
