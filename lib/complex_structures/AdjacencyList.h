@@ -1,16 +1,22 @@
+#pragma once
 #ifndef GRAPHS_ADJACENCYLIST_H
 #define GRAPHS_ADJACENCYLIST_H
 
 
-#include <map>
+#include <unordered_map>
+#include <unordered_set>
 #include "../classes/GraphHandler.h"
 
-class AdjacencyList : public GraphHandler<std::map<ComplexNode, NodeList>> {
+class AdjacencyList : public GraphHandler<std::unordered_map<Node, std::unordered_set<Node>>> {
 public:
-    NodeList* getChildren(ComplexNode node) final;
+    std::unordered_set<Node> getChildren(Node node) final;
+    // std::unordered_set<Node>* getChildrenLinks(Node node) final;
 
-    void addNode(ComplexNode node) final;
-    void addEdge(ComplexNode parent, ComplexNode child) final;
+
+    void addNode(Node node) final;
+    void addEdge(Edge edge) final;
+
+    explicit operator std::string() final;
 };
 
 

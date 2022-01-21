@@ -1,3 +1,4 @@
+#pragma once
 #ifndef GRAPHS_TYPES_H
 #define GRAPHS_TYPES_H
 

@@ -1,15 +1,17 @@
+#pragma once
 #ifndef GRAPHS_EDGE_H
 #define GRAPHS_EDGE_H
 
 
-#include "./ComplexNode.h"
+#include "./Node.h"
 #include "../types.h"
 
-template <typename NodeType>
 struct Edge {
-    NodeType *parent;
-    NodeType *child;
-    EDGE_WEIGHT weight;
+    Node parent;
+    Node child;
+    // EDGE_WEIGHT weight;
+
+    Edge(Node parent, Node child) : parent(parent), child(child) {}
 };
 
 

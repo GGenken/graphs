@@ -1,5 +1,3 @@
-//
-// Created by genken on 1/15/22.
-//
-
+#pragma once
 #include "WeightedAdjacencyList.h"
+

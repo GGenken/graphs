@@ -1,7 +1,4 @@
-//
-// Created by genken on 1/15/22.
-//
-
+#pragma once
 #ifndef GRAPHS_WEIGHTEDADJACENCYLIST_H
 #define GRAPHS_WEIGHTEDADJACENCYLIST_H
 
